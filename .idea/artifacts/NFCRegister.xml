@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="NFCRegister">
+    <output-path>$PROJECT_DIR$/out/artifacts/NFCRegister</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="NFCRegister-Server-JaveEE/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="NFCRegister-Server-JaveEE" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="Hibernate5-required" />
+          <element id="library" level="application" name="Struts2-min" />
+          <element id="library" level="module" name="junit:junit:4.12" module-name="NFCRegister-Server-JaveEE" />
+          <element id="library" level="application" name="mariadb-java-client-2.2.3" />
+          <element id="library" level="module" name="mysql:mysql-connector-java:6.0.6" module-name="NFCRegister-Server-JaveEE" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

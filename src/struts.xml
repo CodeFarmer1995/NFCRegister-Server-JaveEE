@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="root" namespace="/" extends="json-default">
+        <action name="login" class="actions.Login" method="execute">
+            <interceptor-ref name="json">
+            </interceptor-ref>
+            <result name="result" type="json">
+                <param name="includeProperties">
+                    status
+                </param>
+            </result>
+        </action>
+
+        <action name="register" class="actions.SignUp" method="execute">
+            <interceptor-ref name="json">
+            </interceptor-ref>
+            <result name="result" type="json">
+                <param name="includeProperties">
+                    status
+                </param>
+            </result>
+        </action>
+    </package>
+</struts>
